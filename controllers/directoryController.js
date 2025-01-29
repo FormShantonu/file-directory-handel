@@ -1,6 +1,11 @@
 import Directory from "../models/Directory.js";
+import { validationResult } from 'express-validator';
 
 export const createItem = async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
   try {
     const { name, type, parent } = req.body;
     const newItem = new Directory({ name, type, parent });
