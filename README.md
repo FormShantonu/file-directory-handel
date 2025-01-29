@@ -37,5 +37,5 @@ File directory handel system
   "\_\_v": 0
   }
 * Delete file or folder: http://localhost:5000/api/directories/delete/:id
-    * request: {"message": "Deleted successfully"}
-    * 
+    * request: {}
+    * response: {"message": "Deleted successfully"}
