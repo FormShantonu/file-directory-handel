@@ -18,7 +18,9 @@ File directory handel system
     "name":"DIR_TEST_1",
     "type":"folder", //'file', 'folder'
     "parent": null //It will be the id of parrent
+
     }
+
   - response :{
     "name": "DIR_TEST_1",
     "type": "folder",
@@ -36,6 +38,7 @@ File directory handel system
   "parent": null,
   "\_\_v": 0
   }
+
 * Delete file or folder: http://localhost:5000/api/directories/delete/:id
-    * request: {}
-    * response: {"message": "Deleted successfully"}
+  - request: {}
+  - response: {"message": "Deleted successfully"}
